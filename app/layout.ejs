@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <!-- 引入 Material Design Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- 引入 swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- font-awesome link -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+  <!-- AOSk 引入 -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="header border border-dark">
+    <!-- navbar start-->
+    <nav class="navbar sticky-top navbar-light bg-white ">
+      <div class="container-fluid">
+        <h1 class="font-arial fs-5 mx-auto position-relative"><a class="navbar-brand text-primary lh-base"
+            href="#">EXHIBINECTION</a></h1>
+        <ul class="d-flex list-unstyled position-absolute bottom-0 end-0 align-items-end">
+          <li><a href="#" class="fs-7 text-dark me-6 d-none d-md-block">Sign in</a></li>
+          <li><a href="#" class="fs-7 text-dark me-6 d-none d-md-block">Sign up</a></li>
+          <li><a href="#" class="d-flex position-relative me-6" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" role="button">
+              <span class="material-icons text-black pos-absolute bottom-100 start-0 d-block"> confirmation_number
+              </span>
+              <span class="pos-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">3</span>
+            </a>
+          </li>
+          <!--offcanvas start-->
+
+          <div class="offcanvas offcanvas-start bg-black" style="width:540px; margin-top:55px; <%- display %>" data-bs-scroll="true"
+            data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-white fx-3 fw-bold" id="offcanvasScrollingLabel">Cart List</h5>
+              <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body bg-black">
+
+              <ul class="ps-0 ps-md-7">
+                <li class="card border-0 mb-2 card-close">
+                  <button type="button" class="btn-close text-reset p-2" data-bs-dismiss="card-close"
+                    aria-label="Close"></button>
+
+                  <div class="card-body d-flex px-10 pt-0 pb-5 mb-2">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="d-flex ps-7 pe-3">
+                        <img
+                          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+                          alt="exhibition img" class="card-img h-120 w-120">
+                        <div class="d-flex flex-column justify-content-between ms-5">
+                          <div>
+                            <h5 class="card-title fs-7 fw-bold mb-1">2020 台味設計展</h5>
+                            <p class="card-text fs-7 fw-bolder mb-1"><small class="text-muted">01 JUN — 31 OCT</small>
+                            </p>
+                            <p class="card-text text-muted mb-4"> 全票</p>
+                            <p class="card-text fs-6 fw-bold">NT$350</p>
+                          </div>
+                        </div>
+                        <!-- - 01 + -->
+                        <div class="
+                                d-flex
+                                flex-column flex-md-row
+                                justify-content-center
+                                align-items-center
+                                w-30 ps-7
+                              ">
+                          <a href="#" class="link-black mb-1 mb-md-0 p-0 pe-md-1"><span class="material-icons"> remove
+                            </span></a>
+                          <a href="#" class="link-black mb-1 mb-md-0 p-0 mx-md-2">
+                            <p class="h1 fw-bold mb-0">01</p>
+                          </a>
+                          <a href="#" class="link-black mb-1 mb-md-0 p-0 ps-md-1"><span class="material-icons"> add
+                            </span></a>
+                        </div>
+                      </div>
+                    </div>
+                </li>
+                <li class="card border-0 mb-2 card-close">
+                  <button type="button" class="btn-close text-reset p-2" data-bs-dismiss="card-close"
+                    aria-label="Close"></button>
+
+                  <div class="card-body d-flex px-10 pt-0 pb-5 mb-2">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="d-flex ps-7 pe-3">
+                        <img
+                          src="https://images.unsplash.com/photo-1545178803-4056771d60a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;q=80"
+                          alt="exhibition img" class="card-img h-120 w-120">
+                        <div class="d-flex flex-column justify-content-between ms-5">
+                          <div>
+                            <h5 class="card-title fs-7 fw-bold mb-1">2020 台味設計展</h5>
+                            <p class="card-text fs-7 fw-bolder mb-1"><small class="text-muted">01 JUN — 31 OCT</small>
+                            </p>
+                            <p class="card-text text-muted mb-4"> 全票</p>
+                            <p class="card-text fs-6 fw-bold">NT$350</p>
+                          </div>
+                        </div>
+                        <!-- - 01 + -->
+                        <div class="
+                    d-flex
+                    flex-column flex-md-row
+                    justify-content-center
+                    align-items-center
+                    w-30 ps-7
+                  ">
+                          <a href="#" class="link-black mb-1 mb-md-0 p-0 pe-md-1"><span class="material-icons"> remove
+                            </span></a>
+                          <a href="#" class="link-black mb-1 mb-md-0 p-0 mx-md-2">
+                            <p class="h1 fw-bold mb-0">01</p>
+                          </a>
+                          <a href="#" class="link-black mb-1 mb-md-0 p-0 ps-md-1"><span class="material-icons"> add
+                            </span></a>
+                        </div>
+                      </div>
+                    </div>
+                </li>
+                <li class="card border-0 mb-2 card-close">
+                  <button type="button" class="btn-close text-reset p-2" data-bs-dismiss="card-close"
+                    aria-label="Close"></button>
+
+                  <div class="card-body d-flex px-10 pt-0 pb-5 mb-2">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="d-flex ps-7 pe-3">
+                        <img
+                          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+                          alt="exhibition img" class="card-img h-120 w-120">
+                        <div class="d-flex flex-column justify-content-between ms-5">
+                          <div>
+                            <h5 class="card-title fs-7 fw-bold mb-1">2020 台味設計展</h5>
+                            <p class="card-text fs-7 fw-bolder mb-1"><small class="text-muted">01 JUN — 31 OCT</small>
+                            </p>
+                            <p class="card-text text-muted mb-4"> 全票</p>
+                            <p class="card-text fs-6 fw-bold">NT$350</p>
+                          </div>
+                        </div>
+                        <!-- - 01 + -->
+                        <div class="
+                    d-flex
+                    flex-column flex-md-row
+                    justify-content-center
+                    align-items-center
+                    w-30 ps-7
+                  ">
+                          <a href="#" class="link-black mb-1 mb-md-0 p-0 pe-md-1"><span class="material-icons"> remove
+                            </span></a>
+                          <a href="#" class="link-black mb-1 mb-md-0 p-0 mx-md-2">
+                            <p class="h1 fw-bold mb-0">01</p>
+                          </a>
+                          <a href="#" class="link-black mb-1 mb-md-0 p-0 ps-md-1"><span class="material-icons"> add
+                            </span></a>
+                        </div>
+                      </div>
+                    </div>
+                </li>
+               </ul>
+               <!-- bottom btn -->
+               <div class="bg-black py-8">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <p class="h6 mb-0 text-white mb-0 me-7">小計</p>
+                    <p class="h6 mb-0 text-white mb-0">NT$1050</p>
+                  </div>
+                  <a class="offcanvas-btn btn" href="checkout-1.html" role="button">前往結帳</a>
+                 
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!--offcanvas end-->
+        </ul>
+      </div>
+      <!-- navbar end -->
+    </nav>
+
+  </header>
+  <main>
+    
+ 
+
+    <%- contents %>
+       <!-- you will like --> 
+<section class="container <%- display %>">
+  <h2 data-aos="fade-up" class="fs-3 fw-bold mt-9 mb-6">猜你也喜歡...</h2>
+  <div class="row">
+    <div class="col-12 col-md-11 offset-md-1">
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card border-0 rounded-0">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+                class="card-img-top img-fluid h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-6 fw-bold">No.22 線上設計展</h5>
+                <p class="card-text fs-6">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 rounded-0">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+                class="card-img-top img-fluid h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-6 fw-bold">No.22 線上設計展</h5>
+                <p class="card-text fs-6">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 rounded-0">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+                class="card-img-top img-fluid h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-6 fw-bold">No.22 線上設計展</h5>
+                <p class="card-text fs-6">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0 rounded-0">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+                class="card-img-top img-fluid h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-6 fw-bold">No.22 線上設計展</h5>
+                <p class="card-text fs-6">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"> <div class="card border-0 rounded-0">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+              class="card-img-top img-fluid h-100" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-6 fw-bold">No.22 線上設計展</h5>
+              <p class="card-text fs-6">$350</p>
+            </div>
+          </div>
+        </div>     
+    </div>
+  </div>
+</div>
+</div>
+</section>
+  </main>
+
+  <!-- subscribe area -->
+
+  <section class="bgCoverCenter mt-9 <%- display %>"
+    style="height:400px; background-image: url('https://huan5678.github.io/week6-EXHIBINECTION/assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg')">
+    <div class="container d-flex flex-column justify-content-end h-100 py-7">
+      <div class="row">
+        <h2 data-aos="fade-up" data-aos-duration="1600" class="col-12 fs-3 text-white fw-bold mb-3">想收到展覽的最新消息嗎？</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1600" class="col-12 fs-3 text-white fw-bold mb-3">快訂閱我們！</h2>
+        <div class="col-12 col-md-4">
+          <form class="d-flex pb-1">
+            <input class="form-control rounded-0 w-75" type="email" placeholder="輸入您的電子信箱" aria-label="email">
+            <button class="btn btn-secondary rounded-0 w-25 pb-1" type="submit">訂閱</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+     <!-- footer area -->
+  <footer class="footer <%- display %>">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-column flex-md-row align-items-md-center py-6">
+        <h3 class="font-arial me-5"><a href="index.html" class="fs-5 link-black">EXHIBINECTION</a></h3>
+        <span class="text-black">© 2020. All Rights Reserved.</span>
+      </div>
+      <ul class="list-unstyled d-none d-md-flex align-items-center d-none d-md-block">
+        <li class=""><a href="#" class="link-dark me-6">Sign in</a></li>
+        <li class=""><a href="#" class="link-dark">Sign up</a></li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- AOS JS -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    AOS.init();
+   </script>
+
+
+</body>
+
+</html>
