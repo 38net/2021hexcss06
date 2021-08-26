@@ -3,58 +3,115 @@ title: product
 layout: ./app/layout.ejs
 engine: ejs
 current: index
-display: d-none
+display: d-block
 ---
-    
+ <!-- navbar-2  -->
+ <section class="container d-none d-md-block">
+  <ul class="nav d-flex justify-content-center align-items-center list-unstyled mb-0">
+    <li class="nav-item y-4 px-3 navBar-1">
+      <a class="nav-link text-dark" aria-current="page" href="#">音樂</a>
+    </li>
+   <li class="nav-item y-4 px-3 navBar-1">
+      <a class="nav-link text-dark" href="#">戲劇</a>
+    </li>
+   <li class="nav-item y-4 px-3 navBar-1">
+      <a class="nav-link text-dark" href="product.html">設計</a>
+    </li>
+   <li class="nav-item y-4 px-3 navBar-1">
+      <a class="nav-link text-dark" href="#">藝術</a>
+    </li>
+   <li class="nav-item y-4 px-3 navBar-1">
+      <a class="nav-link text-dark" aria-current="page" href="#">美食</a>
+    </li>
+   <li class="nav-item y-4 px-3 navBar-1">
+      <a class="nav-link text-dark" href="#">旅遊</a>
+    </li>
+
+   <li class="nav-item y-4 px-3 navBar-1">
+      <a class="nav-link text-dark" href="#">電影</a>
+    </li>
+   <li class="nav-item y-4 px-3 navBar-1">
+      <a class="nav-link text-dark" href="#">親子</a>
+    </li>
+   <li class="nav-item y-4 px-3 navBar-1">
+      <a class="nav-link text-dark" href="#">期間限定</a>
+    </li>
+  </ul>
+</section>
+
+
+<!-- mobile scroller bar -->
+<section class="nav-scroller d-md-none">
+  <nav class="container nav" aria-label="Secondary navigation">
+    <a class="nav-link active navBar-1 d-block" aria-current="page" href="#">音樂</a>
+    <a class="nav-link navBar-1 d-block" href="#">戲劇</a>
+    <a class="nav-link navBar-1 d-block" href="#">設計</a>
+    <a class="nav-link navBar-1 d-block" href="#">藝術</a>
+    <a class="nav-link navBar-1 d-block" href="#">美食</a>
+    <a class="nav-link navBar-1 d-block" href="#">旅遊</a>
+    <a class="nav-link navBar-1 d-block" href="#">電影</a>
+    <a class="nav-link navBar-1 d-block" href="#">親子</a>
+    <a class="nav-link navBar-1 d-block" href="#">期間限定</a>
+  </nav>  
+ </section>
+
+<ul class="products list-unstyled w-100 mt-2">
+  <li class="bg-primary text-white py-9 pt-md-11 pb-md-8">
+    <div class="container mb-3">
+      <div class="row ">
+        <div data-aos="fade-up" class="col-md-6 col-lg-4 order-3 order-md-1 aos-init">
+          <h2 class="fs-2 mb-2 mb-md-5 fw-bold">2020 台味設計展</h2>
+          <p class="fw-bolder">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+        </div>
+        <div data-aos="fade-up" class="col-md-5 order-1 order-md-2 mb-4 mb-md-0 aos-init">
+          <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="exhibition-img" class="img-fluid w-100">
+        </div>
+        <div data-aos="fade-up" class="d-none col-md-1 d-md-flex align-items-end order-2 mb-2 mb-md-0 aos-init">
+          <p class="mb-0 fs-6 fw-bold">01 <br>JUN <br> | <br>31 <br>OCT</p>
+        </div>
+        <div data-aos="fade-up" class="d-block d-md-none col-md-1 d-flex align-items-end order-2 mb-2 aos-init">
+          <p class="mb-0 fs-6 fw-bold">01 JUN &mdash; 31 OCT</p>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="text-primary py-9 pt-md-11 pb-md-8">
+    <div class="container mb-3">
+      <div class="row justify-content-end">
+        <div data-aos="fade-up" class="col-md-6 col-lg-4 order-3 order-md-1 aos-init">
+          <h2 class="fs-2 mb-2 mb-md-5 fw-bold">No.22 線上設計展</h2>
+          <p class="fw-bolder">這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。</p>
+        </div>
+        <div data-aos="fade-up" class="col-md-5 order-1 order-md-2 mb-4 mb-md-0 aos-init">
+          <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="exhibition-img" class="img-fluid w-100">
+        </div>
+        <div data-aos="fade-up"  class="d-none col-md-1 d-md-flex align-items-end order-2 mb-2 mb-md-0 aos-init">
+          <p class="mb-0 fs-6 fw-bold">01 <br>JUN <br> | <br> 31 <br>OCT</p>
+        </div>
+        <div data-aos="fade-up" class="d-block d-md-none col-md-1 d-flex align-items-end order-2 mb-2 aos-init">
+          <p class="mb-0 fs-6 fw-bold">01 JUN &mdash; 31 OCT</p>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="bg-primary text-white py-9 pt-md-11 pb-md-8">
+    <div class="container mb-3">
+      <div class="row">
+        <div data-aos="fade-up" class="col-md-6 col-lg-4 order-3 order-md-1 aos-init">
+          <h2 class="fs-2 mb-2 mb-md-5 fw-bold">高雄設計節</h2>
+          <p class="fw-bolder">設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？</p>
+        </div>
+        <div data-aos="fade-up" class="col-md-5 order-1 order-md-2 mb-4 mb-md-0 aos-init">
+          <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="exhibition-img" class="img-fluid w-100">
+        </div>
+        <div data-aos="fade-up"  class="d-none col-md-1 d-md-flex align-items-end order-2 mb-2 mb-md-0 aos-init">
+          <p class="mb-0 fs-6 fw-bold">01 <br>JUN  <br>| <br> 31 <br>OCT</p>
+        </div>
+        <div data-aos="fade-up" class="d-block d-md-none col-12 d-flex align-items-end order-2 mb-2 aos-init">
+          <p class="mb-0 fs-6 fw-bold">01 JUN &mdash; 31 OCT</p>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
   
-    <!-- navbar-2  -->
-   <section class="container d-none d-md-block">
-     <ul class="nav d-flex justify-content-center align-items-center list-unstyled mb-0">
-       <li class="nav-item y-4 px-3 navBar-1">
-         <a class="nav-link text-dark" aria-current="page" href="#">音樂</a>
-       </li>
-      <li class="nav-item y-4 px-3 navBar-1">
-         <a class="nav-link text-dark" href="#">戲劇</a>
-       </li>
-      <li class="nav-item y-4 px-3 navBar-1">
-         <a class="nav-link text-dark" href="#">設計</a>
-       </li>
-      <li class="nav-item y-4 px-3 navBar-1">
-         <a class="nav-link text-dark" href="#">藝術</a>
-       </li>
-      <li class="nav-item y-4 px-3 navBar-1">
-         <a class="nav-link text-dark" aria-current="page" href="#">美食</a>
-       </li>
-      <li class="nav-item y-4 px-3 navBar-1">
-         <a class="nav-link text-dark" href="#">旅遊</a>
-       </li>
-
-      <li class="nav-item y-4 px-3 navBar-1">
-         <a class="nav-link text-dark" href="#">電影</a>
-       </li>
-      <li class="nav-item y-4 px-3 navBar-1">
-         <a class="nav-link text-dark" href="#">親子</a>
-       </li>
-      <li class="nav-item y-4 px-3 navBar-1">
-         <a class="nav-link text-dark" href="#">期間限定</a>
-       </li>
-     </ul>
-   </section>
-   
-
-   <!-- mobile scroller bar -->
-   <section class="nav-scroller d-md-none">
-     <nav class="container nav" aria-label="Secondary navigation">
-       <a class="nav-link active navBar-1 d-block" aria-current="page" href="#">音樂</a>
-       <a class="nav-link navBar-1 d-block" href="#">戲劇</a>
-       <a class="nav-link navBar-1 d-block" href="#">設計</a>
-       <a class="nav-link navBar-1 d-block" href="#">藝術</a>
-       <a class="nav-link navBar-1 d-block" href="#">美食</a>
-       <a class="nav-link navBar-1 d-block" href="#">旅遊</a>
-       <a class="nav-link navBar-1 d-block" href="#">電影</a>
-       <a class="nav-link navBar-1 d-block" href="#">親子</a>
-       <a class="nav-link navBar-1 d-block" href="#">期間限定</a>
-     </nav>  
-    </section>
-
-

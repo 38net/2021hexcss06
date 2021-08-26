@@ -4,7 +4,6 @@
 @import "my-helper";
 @import "my-utilities";
 @import "./node_modules/bootstrap/scss/bootstrap";
-
 @import "my-mixins";
 
 // css reset
@@ -172,4 +171,9 @@ a {
   
 }
 
+
+.btn-check:focus + .btn, .btn:focus {
+  outline: 0; 
+  box-shadow: none;
+}
 
